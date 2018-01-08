@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Ascii Code</title>
+        <style>
+            body {
+                font-family: 'Courier New',monospace;
+                font-size: 12px;
+            }
+
+            #help {
+                top: 20px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                width: 500px;
+                height: 260px;
+                border: 1px solid #ddd;
+                background: #fff;
+                padding: 10px 16px;
+            }
+
+            .cell {
+                overflow: hidden;
+                float: left;
+                width: 31px;
+                padding: 2px;
+                margin-bottom: 2.8px;
+            }
+
+            .cell:hover {
+                background: #ededed;
+            }
+
+            .code, .char {
+                text-align: center;
+            }
+
+            .code {
+                font-size: 12px;
+                color: #aaa;
+            }
+
+            .char {
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="help"></div>
+    <script>
+    (function() {
+        'use strict';
+        var help = document.getElementById('help');
+        var i;
+        var cell;
+        var code;
+        var char;
+
+        for (i = 32; i < 127; i++){
+            cell = document.createElement('div');
+            code = document.createElement('div');
+            char = document.createElement('div');
+            cell.className = 'cell';
+            code.className = 'code';
+            char.className = 'char';
+            code.innerHTML = i;
+            char.innerHTML = String.fromCharCode(i);
+            cell.appendChild(code);
+            cell.appendChild(char);
+            help.appendChild(cell);
+        }
+    })();
+    </script>
+    </body>
+</html>
