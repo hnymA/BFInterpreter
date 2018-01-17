@@ -1,7 +1,7 @@
 # BFInterpreter
 
 ## Introduction
-This program is an interpreter of a crazy programming language, "Brainf\*ck". It implemented mainly with JavaScript. We will introduce the language specification of Brainf\*ck in the following section, so please refer to it.
+This program is an interpreter of a crazy programming language, "Brainf\*ck". It implemented mainly with JavaScript. The language specification of Brainf\*ck will be discribed later.
 
 ## Constitution
 - README.md  
@@ -11,7 +11,7 @@ This file.
 The main body of the interpreter. The usage will be described later.
 
 - HelloWorld.txt  
-The source code of Brainf\*ck which displays "Hello, world!". Please copy and use.
+The source code of Brainf\*ck which displays "Hello, world!". Copy and paste the code to use it.
 
 - ascii.html  
 ASCII code table.
@@ -24,9 +24,9 @@ ASCII code table.
 ## How to use
 1. Enter the source code in the text area.
 1. Load the source code by pressing the "Load" button.
-1. Press the "Step" button to perform step execution.
-1. Press the "Run" button to execute the program to the end.
-1. Press the "Reset" button to reset the program execution.
+1. To perform step execution, press the "Step" button .
+1. To execute the program to the end, press the "Run" button .
+1. To reset the program execution, press the "Reset" button .
 
 ## Brainf\*ck language specification  
 Programming is done with only the following 8 commands.  
@@ -56,6 +56,6 @@ These commands can be translated into C using the following substitutions.
 |`]`|`}`|
 
 ## Setting language specification
-As described above, Brainf\*ck is a programming language consisting of eight commands, but you can change each command as you like.For example, "+" command can be expressed as "plus" string.
+As described above, Brainf\*ck is a programming language consisting of eight commands, and you can change each command as you like. For example, "+" command can be expressed as "plus" string.
 
 To set the language specification, change the `Translator` function in `main.js`. For details, see the comments in `main.js`.
