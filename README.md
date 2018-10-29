@@ -1,4 +1,4 @@
-# BFInterpreter
+# Brainf\*ck Interpreter
 
 ## Introduction
 This program is an interpreter of a crazy programming language, "Brainf\*ck". It implemented mainly with JavaScript. The language specification of Brainf\*ck will be discribed later.
