@@ -32,7 +32,7 @@ ASCII code table.
 Programming is done with only the following 8 commands.  
 
 | Command | Meaning |
-|:---:|:---:|
+|:---:|:--- |
 |`>`|Increment the pointer (to point to the next cell to the right).|
 |`<`|Decrement the pointer (to point to the next cell to the left).|
 |`+`|Increment the value at the pointer.|
@@ -45,7 +45,7 @@ Programming is done with only the following 8 commands.
 These commands can be translated into C using the following substitutions.
 
 |Brainf\*ck command|C command|
-|:---:|:---:|
+|:---:|:--- |
 |`>`|`++ptr;`|
 |`<`|`--ptr;`|
 |`+`|`++(*ptr);`|
